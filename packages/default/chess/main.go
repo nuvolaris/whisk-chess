@@ -65,11 +65,10 @@ func play(args map[string]interface{}) map[string]interface{} {
 
 // Main is the entry point of OpenWhisk
 func Main(args map[string]interface{}) map[string]interface{} {
-
 	method, _ := args["__ow_method"]
 	switch method {
-	case "get":
-		return mkMap("body", indexHTML)
+	// case "get":
+	// 	return mkMap("body", indexHTML)
 	case "post":
 		return mkMap("body", play(args))
 	default:

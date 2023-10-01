@@ -1,0 +1,7 @@
+packages:
+    default:
+        actions:
+            chess:
+                function: default/chess.go.zip
+                runtime: go:default
+                web: true
